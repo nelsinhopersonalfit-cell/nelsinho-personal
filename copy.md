@@ -169,13 +169,33 @@ subheadline:    "Cada transformação começou com uma decisão.
 
 transformations: [
   {
-    name:        "[PREENCHER — nome do aluno]",
-    result:      "[PREENCHER — ex: -12kg em 3 meses]",
-    description: "[PREENCHER — depoimento curto do aluno, 1-2 linhas]",
-    before_alt:  "Foto antes da transformação de [nome]",
-    after_alt:   "Foto depois da transformação de [nome]",
+    name:        "Thaiz",
+    result:      "-10kg (74kg → 64kg)",
+    description: "A Estiga Total mudou minha vida! Com o apoio da equipe, eliminei 10kg e conquistei a saúde que sempre quis. Me sinto incrível!",
+    before_alt:  "Foto antes da transformação de Thaiz",
+    after_alt:   "Foto depois da transformação de Thaiz",
   },
-  // Repetir para cada transformação — mínimo 4
+  {
+    name:        "Thaise",
+    result:      "-9kg em 30 dias",
+    description: "Em apenas 30 dias consegui resultados que nunca imaginei! A equipe da Estiga Total é incrível, me motivarem todos os dias. Estou muito feliz com minha transformação!",
+    before_alt:  "Foto antes da transformação de Thaise",
+    after_alt:   "Foto depois da transformação de Thaise",
+  },
+  {
+    name:        "Adriana",
+    result:      "-18kg em 6 meses",
+    description: "Perder 18kg em 6 meses parecia impossível, mas na Estiga Total eu consegui! A metodologia e o incentivo dos professores fizeram toda a diferença nessa jornada.",
+    before_alt:  "Foto antes da transformação de Adriana",
+    after_alt:   "Foto depois da transformação de Adriana",
+  },
+  {
+    name:        "Ellis Vitória",
+    result:      "+11kg de massa em 8 meses",
+    description: "Ganhei 11kg de massa muscular em 8 meses! A estrutura e os treinos personalizados da Estiga Total foram essenciais para eu alcançar meu objetivo de hipertrofia.",
+    before_alt:  "Foto antes da transformação de Ellis Vitória",
+    after_alt:   "Foto depois da transformação de Ellis Vitória",
+  },
 ]
 
 cta:  "Quero Minha Transformação"

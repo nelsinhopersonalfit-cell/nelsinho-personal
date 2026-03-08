@@ -8,6 +8,8 @@ interface TransformationCardProps {
     description: string;
     beforeAlt: string;
     afterAlt: string;
+    beforeImage?: string;
+    afterImage?: string;
     idx: number; // to load mock images correctly while not provided
     className?: string;
 }
@@ -18,6 +20,8 @@ export function TransformationCard({
     description,
     beforeAlt,
     afterAlt,
+    beforeImage,
+    afterImage,
     idx,
     className,
 }: TransformationCardProps) {
@@ -40,11 +44,10 @@ export function TransformationCard({
                         Antes
                     </div>
                     <Image
-                        src={`/images/transformations/t${mIdx}-before.jpg`}
+                        src={beforeImage || `/images/transformations/t${mIdx}-before.jpg`}
                         alt={beforeAlt}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
-                        unoptimized // Mock
                     />
                 </div>
 
@@ -54,11 +57,10 @@ export function TransformationCard({
                         Depois
                     </div>
                     <Image
-                        src={`/images/transformations/t${mIdx}-after.jpg`}
+                        src={afterImage || `/images/transformations/t${mIdx}-after.jpg`}
                         alt={afterAlt}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
-                        unoptimized // Mock
                     />
                 </div>
             </div>

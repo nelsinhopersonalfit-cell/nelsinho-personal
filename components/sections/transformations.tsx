@@ -32,6 +32,8 @@ export function Transformations() {
                             description={transf.description}
                             beforeAlt={transf.beforeAlt}
                             afterAlt={transf.afterAlt}
+                            beforeImage={transf.beforeImage}
+                            afterImage={transf.afterImage}
                         />
                     ))}
                 </div>
