@@ -12,7 +12,7 @@ export function About() {
                     <div className="order-2 lg:order-1 relative flex aspect-square w-full max-w-md mx-auto lg:max-w-none items-center justify-center rounded-2xl bg-brand-surface-2 p-1 border border-brand-border">
                         <div className="relative w-full h-full overflow-hidden rounded-xl">
                             <Image
-                                src="/images/about-bg.png"
+                                src="/images/about-bg-compressed.webp"
                                 alt={ABOUT_COPY.imageAlt}
                                 fill
                                 className="object-cover transition-transform duration-700 hover:scale-105"
@@ -28,7 +28,7 @@ export function About() {
                             <span className="font-barlow-condensed text-display-md font-bold text-brand-orange leading-none">
                                 {ABOUT_COPY.stats[0].number}
                             </span>
-                            <span className="mt-1 font-inter text-label-sm font-semibold uppercase tracking-widest text-brand-offwhite text-center max-w-[80px]">
+                            <span className="mt-1 font-inter text-label-sm font-semibold uppercase tracking-widest text-brand-offwhite text-center w-max max-w-full break-words">
                                 {ABOUT_COPY.stats[0].label}
                             </span>
                         </div>
@@ -38,8 +38,8 @@ export function About() {
                     <div className="order-1 flex flex-col items-start lg:order-2">
                         <SectionLabel>{ABOUT_COPY.sectionLabel}</SectionLabel>
 
-                        <h2 className="mt-2 mb-8 font-barlow-condensed text-display-lg font-bold uppercase leading-none text-brand-offwhite">
-                            {ABOUT_COPY.headline[0]} <br className="hidden md:block" />
+                        <h2 className="mt-2 mb-8 font-barlow-condensed text-balance text-display-lg font-bold uppercase leading-none text-brand-offwhite">
+                            {ABOUT_COPY.headline[0]}{" "}
                             <span className="text-brand-orange">{ABOUT_COPY.headline[1]}</span>
                         </h2>
 

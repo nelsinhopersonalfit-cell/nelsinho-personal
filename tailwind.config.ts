@@ -62,9 +62,9 @@ const config: Config = {
         "section-y-lg": "8rem",
 
         // Container interno
-        "container-px": "1.5rem",
-        "container-px-md": "2.5rem",
-        "container-px-lg": "4rem",
+        "container-px": "1rem",
+        "container-px-md": "2rem",
+        "container-px-lg": "3rem",
 
         // Gaps comuns
         18: "4.5rem",
@@ -132,7 +132,7 @@ const config: Config = {
       },
 
       maxWidth: {
-        "container": "1200px",
+        "container": "1400px",
         "prose-wide": "75ch",
       },
 

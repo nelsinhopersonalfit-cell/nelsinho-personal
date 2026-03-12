@@ -29,10 +29,10 @@ export function PlanCard({
     return (
         <div
             className={cn(
-                "relative flex flex-col rounded-card-lg border bg-brand-surface p-8 transition-all duration-350",
+                "relative flex flex-col rounded-card-lg border bg-brand-surface p-8 transition-all duration-350 focus-within:ring-2 focus-within:ring-brand-orange/50",
                 highlight
-                    ? "border-brand-orange shadow-orange-glow md:-translate-y-4"
-                    : "border-brand-border hover:border-brand-border-light hover:shadow-card",
+                    ? "border-brand-orange shadow-orange-glow md:-translate-y-4 relative z-10 shadow-[0_0_30px_rgba(232,93,4,0.3)] hover:shadow-[0_0_40px_rgba(232,93,4,0.4)]"
+                    : "border-brand-border hover:border-brand-orange/50 hover:shadow-orange-glow-sm hover:-translate-y-1 z-0",
                 className
             )}
         >
@@ -49,7 +49,7 @@ export function PlanCard({
                     {name}
                 </h3>
                 <div className="flex items-baseline justify-center gap-1 font-barlow-condensed">
-                    <span className="text-display-md font-bold text-brand-orange">{price}</span>
+                    <span className="text-[4rem] leading-none font-bold text-brand-orange tracking-tight">{price}</span>
                     <span className="text-body-md font-medium text-brand-muted">{period}</span>
                 </div>
                 <p className="mt-4 text-body-sm text-brand-muted">{description}</p>

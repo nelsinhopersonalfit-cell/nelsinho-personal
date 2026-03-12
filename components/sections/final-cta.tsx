@@ -9,7 +9,7 @@ export function FinalCTA() {
             {/* Background Image Subjacente */}
             <div className="absolute inset-0 z-0 h-full w-full">
                 <Image
-                    src="/images/cta-bg.png"
+                    src="/images/cta-bg-compressed.webp"
                     alt="Dark Dramatic Fitness Motivation Background"
                     fill
                     className="object-cover object-center opacity-40 mix-blend-luminosity"
@@ -25,8 +25,8 @@ export function FinalCTA() {
             <div className="relative z-10 mx-auto w-full max-w-container px-container-px md:px-container-px-md lg:px-container-px-lg">
                 <div className="flex flex-col items-center justify-center text-center">
 
-                    <h2 className="mb-6 font-barlow-condensed text-display-xl font-bold uppercase leading-none text-brand-offwhite drop-shadow-lg">
-                        {CTA_COPY.headline[0]} <br className="hidden md:block" />
+                    <h2 className="mb-6 font-barlow-condensed text-balance text-display-xl font-bold uppercase leading-none text-brand-offwhite drop-shadow-lg">
+                        {CTA_COPY.headline[0]}{" "}
                         <span className="text-brand-orange">{CTA_COPY.headline[1]}</span>
                     </h2>
 

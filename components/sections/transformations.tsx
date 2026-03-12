@@ -12,8 +12,8 @@ export function Transformations() {
                 {/* 1. Header Transformações */}
                 <div className="mb-12 flex flex-col items-center text-center">
                     <SectionLabel>{TRANSFORMATIONS_COPY.sectionLabel}</SectionLabel>
-                    <h2 className="mt-2 mb-6 font-barlow-condensed text-display-lg font-bold uppercase leading-none text-brand-offwhite">
-                        {TRANSFORMATIONS_COPY.headline[0]} <br className="hidden md:block" />
+                    <h2 className="mt-2 mb-6 font-barlow-condensed text-balance text-display-lg font-bold uppercase leading-none text-brand-offwhite">
+                        {TRANSFORMATIONS_COPY.headline[0]}{" "}
                         <span className="text-brand-orange">{TRANSFORMATIONS_COPY.headline[1]}</span>
                     </h2>
                     <p className="max-w-prose-wide font-inter text-body-lg text-brand-muted">
@@ -22,7 +22,7 @@ export function Transformations() {
                 </div>
 
                 {/* 2. Grid de Transformações (Antes/Depois) */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 lg:mb-24">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20 lg:mb-24">
                     {TRANSFORMATIONS_COPY.transformations.map((transf, index) => (
                         <TransformationCard
                             key={index}
@@ -43,8 +43,8 @@ export function Transformations() {
                 {/* 3. Header Testemunhos */}
                 <div className="mb-12 flex flex-col items-center text-center">
                     <SectionLabel>{TESTIMONIALS_COPY.sectionLabel}</SectionLabel>
-                    <h2 className="mt-2 mb-6 font-barlow-condensed text-display-lg font-bold uppercase leading-none text-brand-offwhite">
-                        {TESTIMONIALS_COPY.headline[0]} <br className="hidden md:block" />
+                    <h2 className="mt-2 mb-6 font-barlow-condensed text-balance text-display-lg font-bold uppercase leading-none text-brand-offwhite">
+                        {TESTIMONIALS_COPY.headline[0]}{" "}
                         <span className="text-brand-orange">{TESTIMONIALS_COPY.headline[1]}</span>
                     </h2>
                 </div>
@@ -59,6 +59,7 @@ export function Transformations() {
                             text={testim.text}
                             stars={testim.stars}
                             avatarAlt={testim.avatarAlt}
+                            avatarImage={testim.avatarImage}
                         />
                     ))}
                 </div>
