@@ -91,7 +91,7 @@ const config: Config = {
 
       // ─── GRADIENTES ──────────────────────────────────────────
       backgroundImage: {
-        "gradient-hero": "linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.85) 100%)",
+        "gradient-hero": "linear-gradient(to bottom, rgba(10,10,10,0.15) 0%, rgba(10,10,10,0.425) 100%)",
         "gradient-section": "linear-gradient(to bottom, #0A0A0A 0%, #141414 50%, #0A0A0A 100%)",
         "gradient-card": "linear-gradient(135deg, #141414 0%, #1E1E1E 100%)",
         "gradient-orange": "linear-gradient(135deg, #E85D04 0%, #FF7A2F 100%)",

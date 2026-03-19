@@ -1,11 +1,21 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { getWhatsAppUrl, WHATSAPP_MESSAGES } from "@/lib/constants";
+import { getWhatsAppUrl } from "@/lib/constants";
 import { WHATSAPP_FLOAT_COPY } from "@/lib/copy";
-import React from "react";
-import Image from "next/image";
 
 export function WhatsAppFloat({ className }: { className?: string }) {
     const url = getWhatsAppUrl("default");
+    const [pastHero, setPastHero] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => {
+            setPastHero(window.scrollY > window.innerHeight * 0.85);
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        return () => window.removeEventListener("scroll", onScroll);
+    }, []);
 
     return (
         <a
@@ -14,13 +24,19 @@ export function WhatsAppFloat({ className }: { className?: string }) {
             rel="noopener noreferrer"
             aria-label={WHATSAPP_FLOAT_COPY.ariaLabel}
             className={cn(
-                "group fixed bottom-6 right-6 z-floating flex h-16 w-16 items-center justify-center rounded-full bg-brand-orange text-white shadow-orange-glow transition-all duration-350 hover:scale-110 hover:shadow-orange-glow-lg focus:outline-none focus:ring-4 focus:ring-brand-orange/50 lg:bottom-10 lg:right-10",
+                "group fixed bottom-6 right-6 z-floating flex h-16 w-16 items-center justify-center rounded-full bg-brand-orange text-white shadow-orange-glow transition-all duration-350 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-brand-orange/50 lg:bottom-10 lg:right-10",
+                // Desktop: sempre visível
+                "md:opacity-100 md:pointer-events-auto md:translate-y-0",
+                // Mobile: só aparece depois de rolar além da hero
+                pastHero
+                    ? "opacity-100 pointer-events-auto translate-y-0"
+                    : "opacity-0 pointer-events-none translate-y-4",
                 className
             )}
         >
-            <div className="absolute -left-36 top-1/2 -translate-y-1/2 translate-x-4 rounded-badge bg-brand-surface py-2 px-4 text-label-sm font-semibold text-brand-offwhite opacity-0 shadow-lg transition-all duration-350 group-hover:translate-x-0 group-hover:opacity-100 dark:bg-brand-surface-2 whitespace-nowrap pointer-events-none hidden md:block border border-brand-border">
+            <div className="absolute -left-36 top-1/2 -translate-y-1/2 translate-x-4 rounded-badge bg-brand-surface py-2 px-4 text-label-sm font-semibold text-brand-offwhite opacity-0 shadow-lg transition-all duration-350 group-hover:translate-x-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none hidden md:block border border-brand-border">
                 {WHATSAPP_FLOAT_COPY.tooltip}
-                <div className="absolute -right-1 top-1/2 h-4 w-4 -translate-y-1/2 rotate-45 border-r border-t border-brand-border bg-brand-surface dark:bg-brand-surface-2" />
+                <div className="absolute -right-1 top-1/2 h-4 w-4 -translate-y-1/2 rotate-45 border-r border-t border-brand-border bg-brand-surface" />
             </div>
 
             <svg

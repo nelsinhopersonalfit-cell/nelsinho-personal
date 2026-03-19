@@ -3,6 +3,7 @@ import { Barlow_Condensed, Barlow, Inter } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { WhatsAppFloat } from "@/components/ui/whatsapp-float";
+import { ActiveCardProvider } from "@/components/providers/active-card-provider";
 import "./globals.css";
 
 const barlowCondensed = Barlow_Condensed({
@@ -41,10 +42,12 @@ export default function RootLayout({
             <body
                 className={`${barlowCondensed.variable} ${barlow.variable} ${inter.variable} font-inter bg-brand-black text-brand-offwhite antialiased selection:bg-brand-orange selection:text-white`}
             >
-                <Navbar />
-                {children}
-                <Footer />
-                <WhatsAppFloat />
+                <ActiveCardProvider>
+                    <Navbar />
+                    {children}
+                    <Footer />
+                    <WhatsAppFloat />
+                </ActiveCardProvider>
             </body>
         </html>
     );

@@ -21,23 +21,44 @@ export const HERO_COPY = {
 
 export const ABOUT_COPY = {
     sectionLabel: "Quem é o Nelsinho",
-    headline: ["Mais de uma década", "transformando vidas."],
+    headline: ["Uma história de", "dedicação real."],
+
     paragraphs: [
-        "Sou o Nelsinho, personal trainer formado há mais de 10 anos e fundador da Estiga Total Academia, em Santa Rita - PB. Ao longo da minha trajetória, acompanhei de perto a evolução de centenas de alunos — do primeiro treino até resultados que eles nunca imaginaram ser possíveis.",
-        "Meu trabalho vai além de montar uma planilha. Eu entendo o seu corpo, o seu ritmo e o seu objetivo. Seja para perder gordura, ganhar massa ou simplesmente se sentir melhor no dia a dia — eu crio o caminho certo para você.",
+        "Tenho 44 anos e vivo a musculação desde os 7 — via meu pai treinar no quintal com um livrinho de instruções improvisado. Aos 12, já fazia exercícios adaptados numa academia totalmente artesanal aqui em Santa Rita, PB. Desde então, nunca parei.",
+        "Bacharel em Educação Física e especialista em emagrecimento, criei o Programa de Aceleração de Emagrecimento — um protocolo documentado que já ajudou uma aluna a perder 13 kg em um mês e 15 dias. Meu foco é encontrar o caminho certo para o seu corpo.",
     ],
-    credentials: [
-        "[PREENCHER — ex: Bacharel em Educação Física, UFPB]",
-        "[PREENCHER — ex: Certificação em Musculação e Hipertrofia]",
-        "[PREENCHER — ex: Especialização em Treinamento Funcional]",
-        "Fundador da Estiga Total Academia",
-    ],
+
+    credentials: {
+        academic: [
+            "Bacharel em Educação Física",
+            "Especialista em Emagrecimento",
+            "Criador do Programa de Aceleração de Emagrecimento",
+        ],
+        courses: [
+            "Musculação e Hipertrofia",
+            "Treinamento Funcional",
+            "Nutrição Esportiva Aplicada",
+            "Avaliação Física e Prescrição de Treino",
+            "Condicionamento Físico e Performance",
+        ],
+    },
+
+    // Campo dedicado à badge flutuante — NÃO usar stats[índice]
+    badgeStat: {
+        number: "-13kg",
+        label: "em 45 dias",
+        disclaimer: "* Resultado individual documentado.",
+    },
+
     stats: [
-        { number: "+10", label: "Anos de experiência" },
-        { number: "+500", label: "Alunos transformados" },
-        { number: "2", label: "Unidades da Estiga Total" },
+        { number: "+37", label: "anos praticando musculação" },
+        { number: "+10", label: "anos como PT formado" },
+        { number: "+500", label: "alunos acompanhados" },
+        { number: "-13kg", label: "em 45 dias (result. doc.)" },
     ],
-    imageAlt: "Nelsinho Personal Trainer sorrindo com uniforme da marca na academia",
+
+    programName: "Programa de Aceleração de Emagrecimento",
+    imageAlt: "Nelsinho Personal Trainer, bacharel em Educação Física e especialista em emagrecimento, em Santa Rita - PB",
 };
 
 export const SERVICES_COPY = {
@@ -150,49 +171,51 @@ export const PLANS_COPY = {
     subheadline: "Escolha o formato ideal e comece sua transformação agora.",
     plans: [
         {
-            name: "Personal Online",
-            price: "R$ [PREENCHER]",
+            name: "Plano Mensal",
+            price: "R$ 250",
             period: "/mês",
             highlight: false,
-            description: "Para quem quer resultado com flexibilidade de horário.",
+            badge: "Ideal para começar",
+            description: "Para quem quer flexibilidade total sem fidelidade.",
             features: [
-                "Planilha de treino personalizada",
+                "Foco: Presencial (3x por semana)",
+                "Avaliação Física inclusa",
                 "Suporte via WhatsApp",
-                "Ajuste mensal de cargas",
-                "Orientação nutricional básica",
+                "Sem taxa de cancelamento",
             ],
-            cta: "Começar Agora",
+            cta: "Começar Mensal",
         },
         {
-            name: "Personal Presencial",
-            price: "R$ [PREENCHER]",
+            name: "Plano Semestral",
+            price: "R$ 200",
             period: "/mês",
             highlight: true,
             badge: "Mais Escolhido",
-            description: "Acompanhamento completo com o Nelsinho ao seu lado.",
+            description: "O compromisso ideal para ver resultados reais.",
             features: [
-                "[PREENCHER] sessões por semana",
-                "Avaliação física completa",
-                "Planilha + suporte online",
-                "Acesso à Estiga Total",
-                "Orientação nutricional",
+                "Foco: Presencial (3x por semana)",
+                "Avaliação Física mensal",
+                "Suporte 24h via WhatsApp",
+                "Acesso à Estiga Total incluso",
+                "Investimento total: 6x R$ 200",
             ],
-            cta: "Quero Este Plano",
+            cta: "Escolher Semestral",
         },
         {
-            name: "Pacote Completo",
-            price: "R$ [PREENCHER]",
+            name: "Plano Anual",
+            price: "R$ 150",
             period: "/mês",
             highlight: false,
-            description: "A experiência mais completa de transformação.",
+            badge: "Melhor Custo-Benefício",
+            description: "Cada treino sai por apenas R$ 12,50.",
             features: [
-                "Personal presencial + online",
-                "Avaliação física mensal",
-                "[PREENCHER] sessões por semana",
-                "Suporte nutricional avançado",
-                "Acesso prioritário",
+                "Foco: Presencial (3x por semana)",
+                "Avaliação Física mensal VIP",
+                "Suporte prioritário",
+                "Consultoria Nutricional inclusa",
+                "Investimento total: 12x R$ 150",
             ],
-            cta: "Falar com o Nelsinho",
+            cta: "Garantir Valor Anual",
         },
     ],
     disclaimer: "Tem dúvidas sobre qual plano é ideal para você? Me chama no WhatsApp e a gente conversa.",

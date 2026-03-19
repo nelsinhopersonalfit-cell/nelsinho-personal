@@ -20,4 +20,20 @@
   .animation-delay-500 {
     animation-delay: 500ms;
   }
+
+  /* ─── GEOMETRIC BACKGROUND PATTERNS ─────────────────────────── */
+
+  /* Grid de quadrados — linhas finas, opacidade mínima */
+  .bg-pattern-grid {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='rgba(255%2C255%2C255%2C0.045)' stroke-width='0.5'/%3E%3C/svg%3E");
+    background-size: 60px 60px;
+    background-repeat: repeat;
+  }
+
+  /* Grid com leve tonalidade laranja — para seções em bg-brand-surface */
+  .bg-pattern-grid-warm {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M 60 0 L 0 0 0 60' fill='none' stroke='rgba(232%2C93%2C4%2C0.07)' stroke-width='0.5'/%3E%3C/svg%3E");
+    background-size: 60px 60px;
+    background-repeat: repeat;
+  }
 }

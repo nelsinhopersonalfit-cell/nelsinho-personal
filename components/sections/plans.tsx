@@ -1,50 +1,91 @@
-import { PLANS_COPY } from "@/lib/copy";
-import { PlanCard } from "@/components/ui/plan-card";
+"use client";
+
 import { SectionLabel } from "@/components/ui/section-label";
+import { PlanCard } from "@/components/ui/plan-card";
+import { PLANS_COPY } from "@/lib/copy";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export function Plans() {
     return (
-        <section id="planos" className="relative w-full overflow-hidden bg-brand-surface py-section-y md:py-section-y-lg">
-            <div className="relative z-10 mx-auto w-full max-w-container px-container-px md:px-container-px-md lg:px-container-px-lg">
+        <section
+            id="planos"
+            className="relative w-full overflow-hidden bg-brand-surface py-6 md:py-16"
+        >
+            {/* Background Decor */}
+            <div className="absolute inset-0 z-0 bg-brand-surface">
+                <div className="absolute inset-0 bg-pattern-grid-warm pointer-events-none" aria-hidden="true" />
+                <div className="absolute left-1/2 top-0 h-[500px] w-full -translate-x-1/2 bg-gradient-to-b from-brand-orange/5 to-transparent opacity-50 blur-3xl pointer-events-none" aria-hidden="true" />
+            </div>
 
-                {/* Header */}
-                <div className="mb-12 flex flex-col items-center text-center md:mb-16">
-                    <SectionLabel>{PLANS_COPY.sectionLabel}</SectionLabel>
-                    <h2 className="mt-2 mb-6 font-barlow-condensed text-balance text-display-lg font-bold uppercase leading-none text-brand-offwhite">
+            <div className="relative z-10 mx-auto w-full max-w-container px-container-px md:px-container-px-md lg:px-container-px-lg">
+                <div className="mb-6 md:mb-10 flex flex-col items-center text-center">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                    >
+                        <SectionLabel>{PLANS_COPY.sectionLabel}</SectionLabel>
+                    </motion.div>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        className="mt-2 md:mt-4 font-barlow-condensed text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-brand-offwhite"
+                    >
                         {PLANS_COPY.headline[0]}{" "}
                         <span className="text-brand-orange">{PLANS_COPY.headline[1]}</span>
-                    </h2>
-                    <p className="max-w-prose-wide font-inter text-body-lg text-brand-muted">
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="mt-3 md:mt-6 max-w-2xl text-body-md md:text-body-lg text-brand-muted"
+                    >
                         {PLANS_COPY.subheadline}
-                    </p>
+                    </motion.p>
                 </div>
 
-                {/* Grid de Planos */}
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8 items-center justify-center">
-                    {PLANS_COPY.plans.map((plan, index) => (
-                        <div key={index} className="flex w-full justify-center">
-                            <PlanCard
-                                name={plan.name}
-                                price={plan.price}
-                                period={plan.period}
-                                features={plan.features}
-                                description={plan.description}
-                                cta={plan.cta}
-                                highlight={plan.highlight}
-                                badge={plan.highlight ? "Mais Escolhido" : undefined}
-                                className={plan.highlight ? "lg:scale-105 z-10" : ""}
-                            />
+                <motion.div
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, margin: "-100px" }}
+                    variants={{
+                        hidden: { opacity: 0 },
+                        show: {
+                            opacity: 1,
+                            transition: { staggerChildren: 0.15 },
+                        },
+                    }}
+                    className="flex flex-wrap justify-center gap-8 md:gap-5 lg:gap-6"
+                >
+                    {PLANS_COPY.plans.map((plan, idx) => (
+                        <div
+                            key={idx}
+                            className={cn(
+                                "flex w-full max-w-md md:w-[calc(50%-12px)] lg:w-[calc(33.33%-22px)] lg:max-w-none",
+                                plan.highlight ? "lg:scale-105 z-10" : ""
+                            )}
+                        >
+                            <PlanCard {...plan} />
                         </div>
                     ))}
-                </div>
+                </motion.div>
 
-                {/* Disclaimer / Rodapé da seção */}
-                <div className="mt-16 flex flex-col items-center justify-center text-center">
+                {/* Disclaimer */}
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.6 }}
+                    className="mt-6 md:mt-10 flex flex-col items-center justify-center text-center"
+                >
                     <p className="font-inter text-body-md text-brand-muted/80 max-w-2xl">
-                        * Todos os planos possuem garantia de 7 dias incondicional. Os resultados podem variar de acordo com a biologia e disciplina individual do aluno(a).
+                        {PLANS_COPY.disclaimer}
                     </p>
-                </div>
-
+                </motion.div>
             </div>
         </section>
     );

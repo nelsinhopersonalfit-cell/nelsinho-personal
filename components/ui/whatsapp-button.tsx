@@ -30,7 +30,7 @@ export function WhatsAppButton({
     const sizes = {
         sm: "px-4 py-2 text-body-sm",
         md: "px-6 py-3 text-body-md",
-        lg: "px-6 py-3.5 md:px-8 md:py-4 text-body-lg",
+        lg: "px-5 py-3 md:px-8 md:py-4 text-body-md md:text-body-lg",
     };
 
     const variantClass = variants[variant];

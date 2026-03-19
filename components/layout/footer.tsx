@@ -5,9 +5,9 @@ import React from "react";
 
 export function Footer() {
     return (
-        <footer className="w-full border-t border-brand-border bg-brand-black py-12 md:py-16">
+        <footer className="w-full border-t border-brand-border bg-brand-black py-7 md:py-10">
             <div className="mx-auto w-full max-w-container px-container-px md:px-container-px-md lg:px-container-px-lg">
-                <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
+                <div className="flex flex-col items-center justify-between gap-5 md:flex-row md:items-start">
 
                     {/* Logo & Info */}
                     <div className="flex flex-col items-center text-center md:items-start md:text-left">
@@ -61,7 +61,7 @@ export function Footer() {
                 </div>
 
                 {/* Copyright */}
-                <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-brand-border pt-8 text-center text-body-sm text-brand-muted md:flex-row md:text-left">
+                <div className="mt-6 flex flex-col items-center justify-between gap-3 border-t border-brand-border pt-5 text-center text-body-sm text-brand-muted md:flex-row md:text-left">
                     <p>{FOOTER_COPY.copyright}</p>
                 </div>
             </div>
