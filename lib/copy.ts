@@ -100,7 +100,7 @@ export const SERVICES_COPY = {
             icon: "group",
             title: "Treino em Grupo",
             description: "Pequenos grupos com acompanhamento personalizado. A motivação do coletivo com a atenção individual que você merece.",
-            highlight: "Grupos de até [PREENCHER] pessoas",
+            highlight: "Grupos de até +20 pessoas",
         },
     ],
     cta: "Quero Conhecer os Planos",
