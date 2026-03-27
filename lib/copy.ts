@@ -5,6 +5,7 @@ export const NAVBAR_COPY = {
         { label: "Sobre", anchor: "#sobre" },
         { label: "Serviços", anchor: "#servicos" },
         { label: "Transformações", anchor: "#transformacoes" },
+        { label: "PAE", anchor: "#pae" },
         { label: "Planos", anchor: "#planos" },
         { label: "Contato", anchor: "#contato" },
     ],
@@ -220,6 +221,53 @@ export const PLANS_COPY = {
     ],
     disclaimer: "Tem dúvidas sobre qual plano é ideal para você? Me chama no WhatsApp e a gente conversa.",
     ctaPlans: "Falar no WhatsApp",
+};
+
+export const PAE_COPY = {
+    sectionLabel: "Método Exclusivo",
+    headline: ["Programa de Aceleração", "de Emagrecimento."],
+    subheadline:
+        "Um método criado na prática, para quem quer resultado de verdade — rápido, saudável e duradouro.",
+
+    origin: {
+        title: "Como tudo começou",
+        paragraphs: [
+            "Uma aluna precisava emagrecer rápido — ia se casar em dois meses e queria se sentir bem no vestido de noiva. O problema? Ela não gostava de academia nem de musculação tradicional. Me pediu: \"Nelsinho, não tem outro jeito?\"",
+            "Foi aí que comecei a desenvolver algo diferente. Descobri que existem cardios específicos, escolhidos a dedo, que elevam a frequência cardíaca de forma estratégica, acelerando o metabolismo. Combinados com musculação ao mesmo tempo, a intensidade do gasto calórico dispara.",
+            "Montei um programa semanal com esses cardios dinâmicos e divertidos, junto com metas curtas e acompanhamento dos pequenos resultados. O resultado? Ela perdeu 13kg em 1 mês e 16 dias. Continuamos o programa e chegamos a mais de 25kg em 2 meses.",
+        ],
+    },
+
+    pillars: [
+        {
+            icon: "fire",
+            title: "Cardios Estratégicos",
+            description:
+                "Exercícios selecionados a dedo para elevar a frequência cardíaca e acelerar o metabolismo de forma inteligente.",
+        },
+        {
+            icon: "dumbbell",
+            title: "Musculação Integrada",
+            description:
+                "Treino de força combinado ao cardio na mesma sessão, potencializando o gasto calórico total.",
+        },
+        {
+            icon: "clipboard",
+            title: "Metas Semanais",
+            description:
+                "Programa estruturado semana a semana, com acompanhamento dos pequenos resultados que constroem a grande transformação.",
+        },
+    ],
+
+    results: [
+        { number: "-13kg", label: "em 1 mês e 16 dias", note: "Caso inaugural do programa" },
+        { number: "-25kg", label: "em 2 meses", note: "Resultado continuado" },
+    ],
+
+    closing:
+        "Desde então, o PAE se tornou uma metodologia própria com resultados rápidos e comprovados. Não é só musculação. Não é só cardio. É a combinação certa, no ritmo certo, com acompanhamento de perto.",
+
+    cta: "Quero Conhecer o PAE",
 };
 
 export const CTA_COPY = {

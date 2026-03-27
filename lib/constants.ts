@@ -4,6 +4,7 @@ export const WHATSAPP_MESSAGES = {
     hero: "Olá Nelsinho! Vim pelo site e quero saber mais sobre o personal training.",
     plans: "Olá Nelsinho! Quero conhecer os planos de personal trainer.",
     avaliacao: "Olá Nelsinho! Quero agendar minha avaliação física gratuita.",
+    pae: "Olá Nelsinho! Quero saber mais sobre o Programa de Aceleração de Emagrecimento!",
     default: "Olá Nelsinho! Vim pelo site e gostaria de mais informações.",
 };
 
