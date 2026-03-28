@@ -227,45 +227,36 @@ export const PAE_COPY = {
     sectionLabel: "Método Exclusivo",
     headline: ["Programa de Aceleração", "de Emagrecimento."],
     subheadline:
-        "Um método criado na prática, para quem quer resultado de verdade — rápido, saudável e duradouro.",
+        "O método que já eliminou 25kg em 2 meses — sem treino monótono, sem fórmula genérica.",
 
-    origin: {
-        title: "Como tudo começou",
-        paragraphs: [
-            "Uma aluna precisava emagrecer rápido — ia se casar em dois meses e queria se sentir bem no vestido de noiva. O problema? Ela não gostava de academia nem de musculação tradicional. Me pediu: \"Nelsinho, não tem outro jeito?\"",
-            "Foi aí que comecei a desenvolver algo diferente. Descobri que existem cardios específicos, escolhidos a dedo, que elevam a frequência cardíaca de forma estratégica, acelerando o metabolismo. Combinados com musculação ao mesmo tempo, a intensidade do gasto calórico dispara.",
-            "Montei um programa semanal com esses cardios dinâmicos e divertidos, junto com metas curtas e acompanhamento dos pequenos resultados. O resultado? Ela perdeu 13kg em 1 mês e 16 dias. Continuamos o programa e chegamos a mais de 25kg em 2 meses.",
-        ],
-    },
+    // Mobile: 1 frase de impacto. Desktop: contexto + curiosidade.
+    originMobile:
+        "Nasceu de um desafio real: uma aluna que odiava musculação precisava perder peso rápido para o casamento. O resultado surpreendeu até a mim.",
+    originDesktop:
+        "Uma aluna que odiava musculação precisava emagrecer em 2 meses para o casamento. Desenvolvi uma combinação específica de cardios estratégicos com musculação integrada — ela perdeu 13kg em 45 dias. Desde então, virou minha metodologia mais procurada.",
 
     pillars: [
         {
             icon: "fire",
             title: "Cardios Estratégicos",
-            description:
-                "Exercícios selecionados a dedo para elevar a frequência cardíaca e acelerar o metabolismo de forma inteligente.",
+            description: "Selecionados para acelerar o metabolismo ao máximo.",
         },
         {
             icon: "dumbbell",
             title: "Musculação Integrada",
-            description:
-                "Treino de força combinado ao cardio na mesma sessão, potencializando o gasto calórico total.",
+            description: "Força + cardio na mesma sessão. Gasto calórico potencializado.",
         },
         {
             icon: "clipboard",
             title: "Metas Semanais",
-            description:
-                "Programa estruturado semana a semana, com acompanhamento dos pequenos resultados que constroem a grande transformação.",
+            description: "Resultados visíveis semana a semana. Você acompanha sua evolução.",
         },
     ],
 
     results: [
-        { number: "-13kg", label: "em 1 mês e 16 dias", note: "Caso inaugural do programa" },
-        { number: "-25kg", label: "em 2 meses", note: "Resultado continuado" },
+        { number: "-13kg", label: "em 45 dias" },
+        { number: "-25kg", label: "em 2 meses" },
     ],
-
-    closing:
-        "Desde então, o PAE se tornou uma metodologia própria com resultados rápidos e comprovados. Não é só musculação. Não é só cardio. É a combinação certa, no ritmo certo, com acompanhamento de perto.",
 
     cta: "Quero Conhecer o PAE",
 };
