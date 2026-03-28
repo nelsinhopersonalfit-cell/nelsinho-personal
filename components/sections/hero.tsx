@@ -59,7 +59,7 @@ export function Hero() {
                     </h1>
 
                     {/* Subheadline */}
-                    <p className="animate-fade-in-up max-w-prose-wide font-inter text-body-md font-medium text-brand-muted md:text-body-lg md:text-xl" style={{ animationDelay: '150ms' }}>
+                    <p className="animate-fade-in-up max-w-prose-wide font-inter text-body-md font-medium text-brand-offwhite md:text-body-lg md:text-xl" style={{ animationDelay: '150ms' }}>
                         {HERO_COPY.subheadline}
                     </p>
 
