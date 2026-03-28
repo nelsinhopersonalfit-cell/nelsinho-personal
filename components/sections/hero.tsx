@@ -29,8 +29,6 @@ export function Hero() {
                     className="object-cover object-center hidden md:block"
                     style={{ maskImage: 'linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,1) 100%)', WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,1) 100%)' }}
                 />
-                {/* Desktop overlay */}
-                <div className="absolute inset-0 bg-gradient-hero hidden md:block" />
                 {/* Mobile overlay — escurece base para legibilidade do texto */}
                 <div
                     className="absolute inset-0 md:hidden"
