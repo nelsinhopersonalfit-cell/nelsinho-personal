@@ -75,8 +75,37 @@ export function PAE() {
                     ))}
                 </div>
 
-                {/* CTA */}
-                <div className="flex justify-center">
+                {/* Identification Card */}
+                <div className="mb-4 md:mb-8 max-w-md md:max-w-xl mx-auto rounded-card bg-brand-black/60 border border-brand-border/50 p-4 md:p-6">
+                    <h3 className="font-barlow-condensed text-sm md:text-base font-bold uppercase text-brand-orange mb-2 md:mb-3 text-center">
+                        {PAE_COPY.identification.title}
+                    </h3>
+                    <ul className="space-y-2 md:space-y-2.5">
+                        {PAE_COPY.identification.items.map((item, idx) => (
+                            <li key={idx} className="flex items-start gap-2.5">
+                                <svg className="mt-0.5 h-4 w-4 md:h-5 md:w-5 shrink-0 text-brand-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span className="font-inter text-body-sm md:text-body-md text-brand-muted leading-snug">
+                                    {item}
+                                </span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                {/* Scarcity + CTA */}
+                <div className="flex flex-col items-center text-center gap-3 md:gap-4">
+                    <div className="inline-flex items-center gap-2 rounded-badge bg-brand-orange/10 px-4 py-2 border border-brand-orange/20">
+                        <span className="relative flex h-2 w-2">
+                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-orange opacity-75" />
+                            <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-orange" />
+                        </span>
+                        <span className="font-inter text-label-sm md:text-body-sm font-medium text-brand-orange">
+                            {PAE_COPY.scarcity}
+                        </span>
+                    </div>
+
                     <WhatsAppButton size="lg" message="pae">
                         {PAE_COPY.cta}
                     </WhatsAppButton>

@@ -258,6 +258,19 @@ export const PAE_COPY = {
         { number: "-25kg", label: "em 2 meses" },
     ],
 
+    identification: {
+        title: "O PAE é para você que:",
+        items: [
+            "Já tentou emagrecer e sempre desistiu no meio",
+            "Não aguenta mais treino repetitivo e monótono",
+            "Precisa de resultado visível e rápido",
+            "Quer acompanhamento de verdade, não só uma planilha",
+        ],
+    },
+
+    scarcity:
+        "Turmas reduzidas para garantir acompanhamento individual de cada aluno.",
+
     cta: "Quero Conhecer o PAE",
 };
 
