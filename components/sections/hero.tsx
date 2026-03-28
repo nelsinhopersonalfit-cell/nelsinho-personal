@@ -7,6 +7,10 @@ export function Hero() {
     return (
         <section className="relative flex h-[100dvh] w-full flex-col justify-end md:justify-center overflow-hidden bg-brand-black">
             {/* Background Images */}
+            {/* 
+                NOTA DE ENGENHARIA: Ao substituir estes assets, utilize nomes de arquivos versionados 
+                (ex: hero-v2.webp) para invalidar o cache de longo prazo configurado no next.config.mjs.
+            */}
             <div className="absolute inset-0 z-0 bg-brand-surface-3">
                 {/* Mobile image */}
                 <Image
@@ -14,7 +18,7 @@ export function Hero() {
                     alt="Nelsinho Personal treinando aluno"
                     fill
                     priority
-                    quality={100}
+                    quality={75}
                     sizes="100vw"
                     className="object-cover object-top md:hidden"
                 />
@@ -24,11 +28,12 @@ export function Hero() {
                     alt="Nelsinho Personal treinando aluno"
                     fill
                     priority
-                    quality={100}
+                    quality={75}
                     sizes="100vw"
                     className="object-cover object-center hidden md:block"
                     style={{ maskImage: 'linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,1) 100%)', WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,1) 100%)' }}
                 />
+
                 {/* Mobile overlay — escurece base para legibilidade do texto */}
                 <div
                     className="absolute inset-0 md:hidden"

@@ -1,0 +1,9 @@
+# robots.txt para Nelsinho Personal
+User-agent: *
+Allow: /
+Disallow: /_next/image/
+Disallow: /_next/data/
+Disallow: /api/
+
+# Sitemap (se aplicável no futuro)
+# Sitemap: https://nelsinhopersonal.com.br/sitemap.xml
