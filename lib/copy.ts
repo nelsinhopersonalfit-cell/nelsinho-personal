@@ -15,7 +15,7 @@ export const HERO_COPY = {
     badge: "+10 anos de experiência • Personal Completo",
     headline: {
         static1: "Seu corpo tem",
-        rotating: ["potencial", "força", "evolução", "memória"],
+        rotating: ["potencial.", "força.", "evolução.", "memória."],
         static2: "Você só precisa de quem",
         static3: "sabe extrair o máximo.",
     },
