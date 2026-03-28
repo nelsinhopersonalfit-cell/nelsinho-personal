@@ -5,9 +5,9 @@ import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 
 export function Testimonials() {
     return (
-        <section id="depoimentos" className="w-full bg-brand-surface py-6 md:py-16 relative overflow-hidden">
+        <section id="depoimentos" className="w-full bg-brand-black py-6 md:py-16 relative overflow-hidden">
             {/* Geometric grid pattern */}
-            <div className="absolute inset-0 bg-pattern-grid-warm pointer-events-none" aria-hidden="true" />
+            <div className="absolute inset-0 bg-pattern-grid pointer-events-none" aria-hidden="true" />
             {/* Ambient glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[600px] bg-brand-orange/5 blur-[120px] rounded-full pointer-events-none" aria-hidden="true" />
 
