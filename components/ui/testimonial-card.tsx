@@ -83,13 +83,10 @@ export function TestimonialCard({
             </p>
 
             <div className="flex items-center gap-3 md:gap-4">
-                <div className="relative flex h-10 w-10 md:h-14 md:w-14 shrink-0 items-center justify-center rounded-full bg-brand-surface-3 overflow-hidden border border-brand-border-light shadow-sm">
-                    <Image
-                        src={avatarImage || `/images/testimonials/avatar-1.png`}
-                        alt={avatarAlt}
-                        fill
-                        className="object-cover"
-                    />
+                <div className="flex h-10 w-10 md:h-14 md:w-14 shrink-0 items-center justify-center rounded-full bg-brand-orange/15 border border-brand-orange/30">
+                    <span className="font-barlow-condensed text-lg md:text-2xl font-bold text-brand-orange">
+                        {name.charAt(0)}
+                    </span>
                 </div>
                 <div>
                     <h4 className={cn(
