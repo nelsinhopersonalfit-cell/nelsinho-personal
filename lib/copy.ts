@@ -13,7 +13,12 @@ export const NAVBAR_COPY = {
 
 export const HERO_COPY = {
     badge: "+10 anos de experiência • Personal Completo",
-    headline: ["Seu corpo tem", "potencial.", "Você só precisa de quem", "sabe extrair o máximo."],
+    headline: {
+        static1: "Seu corpo tem",
+        rotating: ["potencial", "força", "evolução", "memória"],
+        static2: "Você só precisa de quem",
+        static3: "sabe extrair o máximo.",
+    },
     subheadline: "Treino 100% personalizado para emagrecimento, hipertrofia e condicionamento. Presencial e online, em Santa Rita - PB.",
     ctaPrimary: "Quero Meu Treino Personalizado",
     ctaSecondary: "Ver Transformações",

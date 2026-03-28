@@ -2,6 +2,7 @@ import { HERO_COPY } from "@/lib/copy";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
+import RotatingText from "@/components/ui/rotating-text";
 
 export function Hero() {
     return (
@@ -52,14 +53,23 @@ export function Hero() {
                     {/* Headline Dinâmica */}
                     <h1 className="animate-fade-in-up font-barlow-condensed text-display-xl font-bold uppercase tracking-tight text-brand-offwhite md:text-display-2xl flex flex-col items-start leading-[0.9]">
                         <div>
-                            {HERO_COPY.headline[0]}{" "}
-                            <span className="text-brand-orange">{HERO_COPY.headline[1]}</span>
+                            {HERO_COPY.headline.static1}
+                        </div>
+                        <div className="text-brand-orange leading-tight">
+                            <RotatingText
+                                texts={HERO_COPY.headline.rotating}
+                                staggerDuration={0.025}
+                                staggerFrom="last"
+                                transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                                rotationInterval={2500}
+                                mainClassName="text-brand-orange"
+                            />
                         </div>
                         <div className="text-display-lg md:text-display-xl mt-0.5 md:mt-2">
-                            {HERO_COPY.headline[2]}
+                            {HERO_COPY.headline.static2}
                         </div>
                         <div className="text-display-lg text-brand-orange md:text-display-xl -mt-0.5 md:-mt-2">
-                            {HERO_COPY.headline[3]}
+                            {HERO_COPY.headline.static3}
                         </div>
                     </h1>
 
