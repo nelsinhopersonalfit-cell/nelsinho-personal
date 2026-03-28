@@ -113,5 +113,14 @@ export default function CountUp({
     return () => unsubscribe();
   }, [springValue, formatValue]);
 
-  return <span className={className} ref={ref} />;
+  const finalText = formatValue(direction === 'down' ? from : to);
+
+  return (
+    <span
+      className={className}
+      ref={ref}
+      style={{ display: 'inline-block', minWidth: `${finalText.length}ch` }}
+      aria-label={finalText}
+    />
+  );
 }
