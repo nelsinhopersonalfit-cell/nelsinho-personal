@@ -105,7 +105,7 @@ export function PAE() {
 
                     {/* Scarcity + CTA */}
                     <div className="flex flex-col items-center text-center gap-3 md:gap-5">
-                        <div className="inline-flex items-center gap-2 rounded-badge bg-brand-orange/10 px-4 py-2 border border-brand-orange/20">
+                        <div className="order-1 md:order-2 inline-flex items-center gap-2 rounded-badge bg-brand-orange/10 px-4 py-2 border border-brand-orange/20">
                             <span className="relative flex h-2 w-2">
                                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-orange opacity-75" />
                                 <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-orange" />
@@ -115,7 +115,7 @@ export function PAE() {
                             </span>
                         </div>
 
-                        <WhatsAppButton size="lg" message="pae">
+                        <WhatsAppButton size="lg" message="pae" className="order-2 md:order-1">
                             {PAE_COPY.cta}
                         </WhatsAppButton>
                     </div>
