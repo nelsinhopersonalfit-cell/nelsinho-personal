@@ -106,7 +106,7 @@ export function TransformationCard({
                 </motion.div>
                 <h3 className="mb-1 font-barlow text-lg md:text-2xl font-bold text-brand-offwhite">{name}</h3>
                 <p className="mb-2 md:mb-4 text-body-md md:text-body-lg font-semibold text-brand-orange">{result}</p>
-                <p className="text-body-sm text-brand-muted">"{description}"</p>
+                {description && <p className="text-body-sm text-brand-muted">"{description}"</p>}
             </div>
         </motion.div>
     );
