@@ -21,9 +21,9 @@ function CredentialItem({ text, variant = "primary" }: { text: string; variant?:
 
 export function About() {
     return (
-        <section id="sobre" className="w-full bg-brand-black py-6 md:py-12 relative overflow-hidden">
+        <section id="sobre" className="w-full bg-brand-surface py-6 md:py-12 relative overflow-hidden">
             {/* Geometric grid pattern */}
-            <div className="absolute inset-0 bg-pattern-grid pointer-events-none" aria-hidden="true" />
+            <div className="absolute inset-0 bg-pattern-grid-warm pointer-events-none" aria-hidden="true" />
             <div className="mx-auto w-full max-w-container px-container-px md:px-container-px-md lg:px-container-px-lg relative z-10">
                 <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-center lg:gap-12">
 

@@ -10,11 +10,11 @@ export function Plans() {
     return (
         <section
             id="planos"
-            className="relative w-full overflow-hidden bg-brand-surface py-6 md:py-16"
+            className="relative w-full overflow-hidden bg-brand-black py-6 md:py-16"
         >
             {/* Background Decor */}
-            <div className="absolute inset-0 z-0 bg-brand-surface">
-                <div className="absolute inset-0 bg-pattern-grid-warm pointer-events-none" aria-hidden="true" />
+            <div className="absolute inset-0 z-0 bg-brand-black">
+                <div className="absolute inset-0 bg-pattern-grid pointer-events-none" aria-hidden="true" />
                 <div className="absolute left-1/2 top-0 h-[500px] w-full -translate-x-1/2 bg-gradient-to-b from-brand-orange/5 to-transparent opacity-50 blur-3xl pointer-events-none" aria-hidden="true" />
             </div>
 

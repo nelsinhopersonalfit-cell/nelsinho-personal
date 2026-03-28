@@ -4,7 +4,7 @@ import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 
 export function FinalCTA() {
     return (
-        <section id="contato" className="relative w-full overflow-hidden bg-brand-black py-10 md:py-16">
+        <section id="contato" className="relative w-full overflow-hidden bg-brand-surface py-10 md:py-16">
 
             {/* Background Image Subjacente */}
             <div className="absolute inset-0 z-0 h-full w-full">
