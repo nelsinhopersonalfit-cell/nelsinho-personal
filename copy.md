@@ -315,7 +315,7 @@ location:    "Santa Rita - PB"
 
 links: [
   { label: "Instagram", url: "https://instagram.com/nelsinhopersonaltrainer321" },
-  { label: "WhatsApp",  url: "https://wa.me/558399190XXXX" },
+  { label: "WhatsApp",  url: "https://wa.me/5583987011695" },
 ]
 
 copyright:   "© 2026 Nelsinho Personal. Todos os direitos reservados."

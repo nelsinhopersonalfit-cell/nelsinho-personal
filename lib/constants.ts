@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = "5583991900000"; // TODO: Atualizar para o número real se fornecido
+export const WHATSAPP_NUMBER = "5583987011695";
 
 export const WHATSAPP_MESSAGES = {
     hero: "Olá Nelsinho! Vim pelo site e quero saber mais sobre o personal training.",

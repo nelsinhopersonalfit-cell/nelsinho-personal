@@ -144,7 +144,7 @@ export default function Home() {
 ```ts
 // Centraliza todos os dados estáticos
 
-export const WHATSAPP_NUMBER = "5583XXXXXXXXX" // substituir pelo número real
+export const WHATSAPP_NUMBER = "5583987011695"
 
 export const WHATSAPP_MESSAGES = {
   hero:      "Olá Nelsinho! Vim pelo site e quero saber mais sobre o personal training.",

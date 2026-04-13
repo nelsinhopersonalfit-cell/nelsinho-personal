@@ -54,7 +54,7 @@ hipertrofia e condicionamento físico em Santa Rita - PB.
 
 ## CTAs e WhatsApp
 
-- Todo botão CTA principal abre WhatsApp: `https://wa.me/558399190XXXX`
+- Todo botão CTA principal abre WhatsApp: `https://wa.me/5583987011695`
 - Usar o componente `<WhatsAppButton />` para todos os CTAs — nunca criar links soltos
 - O número de WhatsApp está em `lib/constants.ts` como `WHATSAPP_NUMBER`
 - O botão flutuante fixo (`<WhatsAppFloat />`) deve aparecer em todas as páginas
