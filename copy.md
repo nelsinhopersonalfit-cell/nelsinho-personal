@@ -183,11 +183,11 @@ transformations: [
     after_alt:   "Foto depois da transformação de Thaise",
   },
   {
-    name:        "Adriana",
-    result:      "-18kg em 6 meses",
-    description: "Perder 18kg em 6 meses parecia impossível, mas na Estiga Total eu consegui! A metodologia e o incentivo dos professores fizeram toda a diferença nessa jornada.",
-    before_alt:  "Foto antes da transformação de Adriana",
-    after_alt:   "Foto depois da transformação de Adriana",
+    name:        "Thaiz",
+    result:      "-10kg (74kg → 64kg)",
+    description: "O Nelsinho mudou minha vida! Com o apoio dele, eliminei 10kg e conquistei a saúde que sempre quis. Me sinto extremamente bem!",
+    before_alt:  "Foto antes da transformação de Thaiz",
+    after_alt:   "Foto depois da transformação de Thaiz",
   },
   {
     name:        "Ellis Vitória",
